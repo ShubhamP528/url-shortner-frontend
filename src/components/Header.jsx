@@ -8,7 +8,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const logoutHandler = () => {
-    localStorage.removeItem("userToken");
+    localStorage.removeItem("auth_access_token");
     setUserToken("");
     navigate("/");
   };
